@@ -13,4 +13,4 @@ We can use time series to make prediction.
 * Calculate the prefermance of each altorithm, such as MAE and MSE.
 
 # Milestone
-2020.01.16 - 2020.01.22
+Let it go.
