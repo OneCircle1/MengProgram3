@@ -12,7 +12,22 @@ Run SVR.py.
 
 After observation, linear model can not be used in this project. So two other prediction models are used in the project. One is RBF model, and the other is polynominal models. It is quite obvious that RBF model is more precise.
 
+
+
+The MSE and MAE of two models
+
+```
+RBF MSE: 0.01158638260458696
+POLY MSE: 54.33059841213097
+RBF MAE: 0.0926518995279471
+POLY MAE: 4.396930495455487
+```
+
+
+
 ![image](https://github.com/OneCircle1/MengProgram3/blob/master/SVR/png/SVR.png)
+
+
 
 The real stock price on ```2017-11-10``` is ```19.98```. The first number below is the price predicted with RBF model, and the second number below is the price predicted with polynominal models.
 

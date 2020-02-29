@@ -30,11 +30,24 @@ def predict_prices(dates, prices, x):
     # svr_lin.fit(dates,prices)
     svr_poly.fit(dates, prices)
     svr_rbf.fit(dates, prices)
+
+    rbf_predict = svr_rbf.predict(dates)
+    poly_predict = svr_poly.predict(dates)
+
+    rbf_mse=np.sum((rbf_predict-prices)**2)/len(rbf_predict)
+    poly_mse=np.sum((poly_predict-prices)**2)/len(poly_predict)
+    print("RBF MSE:", rbf_mse)
+    print("POLY MSE:", poly_mse)
+
+    rbf_mae=np.sum(np.absolute(rbf_predict-prices))/len(prices)
+    poly_mae=np.sum(np.absolute(poly_predict-prices))/len(prices)
+    print("RBF MAE:", rbf_mae)
+    print("POLY MAE:", poly_mae)
     
     plt.scatter(dates,prices,color = 'black',label = 'Data')
-    plt.scatter(dates,svr_rbf.predict(dates),color = 'red',label = 'RBF Model')
+    plt.scatter(dates,rbf_predict,color = 'red',label = 'RBF Model')
     # plt.scatter(dates,svr_lin.predict(dates),color = 'green',label = 'Linear Model')
-    plt.scatter(dates,svr_poly.predict(dates),color = 'blue',label = 'Polynominal Model')
+    plt.scatter(dates,poly_predict,color = 'blue',label = 'Polynominal Model')
     plt.xlabel('Date')
     plt.ylabel('Price')
     plt.title('SVR')
