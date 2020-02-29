@@ -4,7 +4,9 @@ As in classification, support vector regression (SVR) is characterized by the us
 
 # Instruction
 
-Use SVR to predict the stock price.
+Install pandas, lumpy, sklearn, matplotlib, python3.
+
+Run SVR.py.
 
 # Result
 
