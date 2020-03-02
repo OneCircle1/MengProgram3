@@ -4,7 +4,7 @@ As in classification, support vector regression (SVR) is characterized by the us
 
 # Instruction
 
-Install pandas, lumpy, sklearn, matplotlib, python3.
+Install pandas, numpy, sklearn, matplotlib, python3.
 
 Run SVR.py.
 
