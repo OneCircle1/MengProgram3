@@ -14,6 +14,12 @@ We can use time series to make prediction.
 
 # Result
 
+### Visualization
+
+![image](https://github.com/OneCircle1/MengProgram3/blob/master/visualization/png/Volume.png)
+
+![image](https://github.com/OneCircle1/MengProgram3/blob/master/visualization/png/HL.png)
+
 ### SVR
 
 The MSE and MAE of two models
