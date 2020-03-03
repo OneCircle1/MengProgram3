@@ -50,6 +50,3 @@ MAE: 0.3973067512257079
 ```
 
 ![image](https://github.com/OneCircle1/MengProgram3/blob/master/LSTM/png/LSTM.png)
-
-# Milestone
-Let it go.
